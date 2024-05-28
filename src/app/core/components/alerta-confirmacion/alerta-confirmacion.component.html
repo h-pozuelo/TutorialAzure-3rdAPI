@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>{{ config.titulo }}</h2>
+<mat-dialog-content class="mat-typography">
+  <p>{{ config.descripcion }}</p>
+  <p>{{ config.pregunta }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="warn" [mat-dialog-close]="false">
+    Cancelar
+  </button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true">
+    Ok
+  </button>
+</mat-dialog-actions>
